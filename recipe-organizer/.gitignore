@@ -1,0 +1,59 @@
+# Kotlin & Java
+out/
+*.class
+*.jar
+*.war
+*.aar
+*.jmod
+*.jar
+*.exe
+*.o
+*.so
+*.dylib
+*.dll
+*.drlib
+*.su
+*.gch
+*.pdb
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/
+*.code-workspace
+
+# Build
+build/
+dist/
+target/
+bin/
+
+# Runtime
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Kotlin
+.kotlin/
+*.kexe
