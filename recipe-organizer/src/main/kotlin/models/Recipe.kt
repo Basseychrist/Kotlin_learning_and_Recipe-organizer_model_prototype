@@ -1,3 +1,5 @@
+package recipeorganizer
+
 // Recipe.kt - Represents a single recipe with ingredients and metadata
 data class Recipe(
     val id: String,
@@ -8,6 +10,7 @@ data class Recipe(
     val difficulty: String, // Easy, Medium, Hard
     val tags: List<String> // breakfast, lunch, dinner, vegetarian, etc.
 ) {
+    // Builds a readable multi-line summary of the recipe.
     override fun toString(): String {
         val ingredientList = ingredients.joinToString("\n    • ") { it.toString() }
         return """

@@ -110,5 +110,6 @@ Feel free to fork this project and submit pull requests for any improvements!
 MIT License - see LICENSE file for details
 
 ## Author
+Eno-Obong Etim Bassey
 
 Created as a learning project for Kotlin console applications and collection manipulation.
