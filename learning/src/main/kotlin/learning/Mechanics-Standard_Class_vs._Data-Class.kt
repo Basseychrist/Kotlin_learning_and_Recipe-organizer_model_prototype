@@ -1,7 +1,11 @@
+package learning
+
 // Holds project data without auto-generated equality or string helpers.
+@Suppress("UNUSED_PARAMETER")
 class StandardProject(val title: String, val tasks: Int)
 
 // Uses a data class to get readable output, value equality, and copy support.
+@Suppress("UNUSED_PARAMETER")
 data class DataProject(val title: String, val tasks: Int)
 
 // Compares a standard class with a data class.

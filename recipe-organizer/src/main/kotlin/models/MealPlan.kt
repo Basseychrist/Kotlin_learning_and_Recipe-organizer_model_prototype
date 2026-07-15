@@ -1,6 +1,7 @@
-package recipeorganizer
+package recipeorganizer.models
 
 // MealPlan.kt - Represents meal plans
+@Suppress("UNUSED_PARAMETER")
 data class MealPlan(
     val date: String, // YYYY-MM-DD
     val breakfast: Recipe? = null,
@@ -14,11 +15,13 @@ data class MealPlan(
     }
 
     // Adds up the cooking time for all recipes in the day.
+    @Suppress("UNUSED")
     fun getTotalCookingTime(): Int {
         return getAllMeals().sumOf { it.cookingTime }
     }
 }
 
+@Suppress("UNUSED")
 data class WeeklyMealPlan(
     val startDate: String, // YYYY-MM-DD (Monday)
     val dailyPlans: List<MealPlan> // 7 days
@@ -29,11 +32,13 @@ data class WeeklyMealPlan(
     }
 
     // Removes duplicates so only unique recipes remain.
+    @Suppress("UNUSED")
     fun getUniqueRecipes(): Set<Recipe> {
         return getAllRecipes().toSet()
     }
 
     // Totals ingredient quantities across the whole weekly plan.
+    @Suppress("UNUSED")
     fun getAggregatedIngredients(): Map<String, Double> {
         val ingredientMap = mutableMapOf<String, Double>()
         for (recipe in getAllRecipes()) {

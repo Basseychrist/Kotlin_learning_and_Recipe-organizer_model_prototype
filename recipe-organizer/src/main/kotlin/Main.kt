@@ -1,5 +1,8 @@
 package recipeorganizer
 
+import recipeorganizer.models.Ingredient
+import recipeorganizer.models.Recipe
+
 // Runs the recipe prototype and prints scope plus collection examples.
 fun main() {
     println("Recipe Organizer Prototype")

@@ -1,8 +1,10 @@
-package Learning
+package learning
 
 // Demonstrates if/else and when branching with a sample score.
 fun main() {
-    val score = 85
+    // Read score from user to make branching meaningful; falls back to 85 if input missing/invalid
+    print("Enter a score (0-100) or press Enter to use sample: ")
+        val score = readlnOrNull()?.toIntOrNull() ?: 85
 
     // 1. Classic if-else
     if (score >= 50) {

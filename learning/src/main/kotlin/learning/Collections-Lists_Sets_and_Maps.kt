@@ -1,10 +1,16 @@
+@file:Suppress("SpellCheckingInspection", "UNUSED_VARIABLE")
+package learning
 
 // Demonstrates list, set, and map operations in Kotlin.
+@Suppress("UNUSED_VARIABLE")
 fun main() {
     // ---- 1. LISTS (Ordered, allows duplicates) ----
     val immutableList = listOf("Kotlin", "Java", "Kotlin") // Cannot add/remove elements
     val mutableList = mutableListOf("Next.js", "Supabase")
     mutableList.add("Cloudflare Pages") // Modifiable
+
+    // Use immutableList to avoid "never used" warnings and show duplicate preservation
+    println("Immutable list (with duplicates preserved): ${immutableList.joinToString()}")
 
     println("--- List Practice ---")
     for (tech in mutableList) {

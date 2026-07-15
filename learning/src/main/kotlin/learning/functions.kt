@@ -1,3 +1,5 @@
+package learning
+
 // Returns a greeting string for the given user name.
 fun greetUser(name: String): String {
     return "Hello, $name! Welcome back."

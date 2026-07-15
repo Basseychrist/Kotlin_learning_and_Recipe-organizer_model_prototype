@@ -1,6 +1,7 @@
-package recipeorganizer
+package recipeorganizer.models
 
 // Recipe.kt - Represents a single recipe with ingredients and metadata
+@Suppress("UNUSED_PARAMETER")
 data class Recipe(
     val id: String,
     val name: String,

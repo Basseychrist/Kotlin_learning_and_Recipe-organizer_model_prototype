@@ -1,6 +1,7 @@
-package recipeorganizer
+package recipeorganizer.models
 
 // Ingredient.kt - Represents an ingredient with quantity and unit
+@Suppress("UNUSED_PARAMETER")
 data class Ingredient(
     val name: String,
     val quantity: Double,

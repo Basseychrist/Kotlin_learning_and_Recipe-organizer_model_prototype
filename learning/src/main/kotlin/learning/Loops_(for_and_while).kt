@@ -1,3 +1,5 @@
+package learning
+
 // Demonstrates looping with a range-based for loop and a while loop.
 fun main() {
     // 1. For loop using a range (1 to 5 inclusive)

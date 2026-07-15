@@ -22,7 +22,7 @@ This project is written entirely in **Kotlin** (version 1.8+), a modern JVM lang
 - [Kotlin Lambda Expressions and Functional Interfaces](https://kotlinlang.org/docs/lambdas.html)
 - [Kotlin Scope Functions](https://kotlinlang.org/docs/scope-functions.html)
 - [JetBrains IntelliJ IDEA](https://www.jetbrains.com/idea/)
-- [Kotlin by Example - Interactive Learning](https://play.kotlinlang.org/byExample)
+- [Kotlin by Example - Interactive learning](https://play.kotlinlang.org/byExample)
 
 # Future Work
 
