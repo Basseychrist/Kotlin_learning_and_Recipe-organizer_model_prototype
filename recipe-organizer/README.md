@@ -38,7 +38,8 @@ recipe-organizer/
 ### Installation
 
 ```bash
-git clone https://github.com/baseychrist/recipe-organizer.git
+git clone https://github.com/Basseychrist/Kotlin_learning_and_Recipe-organizer_model_prototype.git
+
 cd recipe-organizer
 ```
 
