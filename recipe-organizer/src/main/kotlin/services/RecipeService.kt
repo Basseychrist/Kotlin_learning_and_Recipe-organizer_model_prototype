@@ -1,13 +1,12 @@
 package recipeorganizer.services
 
-import recipeorganizer.models.Ingredient
 import recipeorganizer.models.Recipe
 
 /**
  * RecipeService.kt - Business logic for recipe filtering and scaling operations
  *
  * This service provides utility functions for:
- * - Filtering recipes by ingredient matches (any or all)
+ * - Filtering recipes by ingredient matches
  * - Scaling recipe servings with proportional ingredient adjustments
  * - Displaying scaled ingredient information
  */
@@ -60,33 +59,6 @@ fun scaleRecipe(recipe: Recipe, targetServings: Int): Recipe {
         ingredients = scaledIngredients,
         servings = targetServings
     )
-}
-
-/**
- * Filters recipes that contain ALL specified ingredients.
- * More restrictive than filterRecipesByIngredients - requires every ingredient to match.
- *
- * @param recipes List of recipes to filter
- * @param ingredientNames Ingredient names that must ALL be present (case-insensitive)
- * @return List of recipes containing all matching ingredients
- *
- * Example: filterRecipesByAllIngredients(recipes, listOf("eggs", "cheese"))
- *          returns only recipes with both eggs AND cheese
- */
-fun filterRecipesByAllIngredients(recipes: List<Recipe>, ingredientNames: List<String>): List<Recipe> {
-    if (ingredientNames.isEmpty()) return recipes
-    
-    // Trim and lowercase all search terms for consistent comparison
-    val lowerNames = ingredientNames.map { it.trim().lowercase() }
-    
-    return recipes.filter { recipe ->
-        // Every required ingredient must exist in this recipe
-        lowerNames.all { required ->
-            recipe.ingredients.any { ingredient ->
-                ingredient.name.lowercase() == required
-            }
-        }
-    }
 }
 
 /**
