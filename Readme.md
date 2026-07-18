@@ -6,7 +6,7 @@ I developed a comprehensive Kotlin learning project consisting of two main compo
 
 The purpose of this software is to create a structured learning resource that reinforces Kotlin syntax and language fundamentals through both isolated examples and integrated applications. By combining theory with practice, I'm building confidence in using Kotlin and demonstrating my ability to apply language features to real-world problems like recipe management and meal planning.
 
-[Software Demo Video](https://youtu.be/k9RLTXUpRFQ?si=yX0k5RJRZE_-fOH1)
+[Software Demo Video](https://youtu.be/bWGJrYtz4II?si=boaF6J2Tx7H0yA5B)
 
 # Development Environment
 
